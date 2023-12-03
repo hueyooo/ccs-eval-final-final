@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comments Evaluation Summary</title>
+  <style>
+    h1 {
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+    h2{
+      font-size: 16px;
+    }
+    table {
+      border: 1px solid black;
+    }
+    thead tr td {
+      background-color: lightgray;
+      font-weight: bold;
+    }
+    td {
+      padding: 5px;
+      font-size: 14px;
+    }
+    .sentiment {
+      width: 15%;
+    }
+    .comment {
+      width: 70%;
+    }
+    .is_consistent {
+      width: 15%;
+    }
+    .center {
+      text-align: center;
+    }
+    .summary {
+      width: 85%;
+    }
+    .percent {
+      width: 15%;
+      background: none;
+    }
+  </style>
+</head>
+<body>
+  {% for inst in instructor %}
+  <h2>{{inst}}</h2>
+  <table>
+    <thead>
+      <tr>
+        <td class="sentiment">Sentiment</td>
+        <td class="comment">Comment</td>
+        <td class="is_inconsistent">Is Inconsistent</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for comments in summary %}
+      {% for comment in comments %}
+      {% if inst == comment.instructor %}
+      <tr>
+        <td>{{comment.sentiment}}</td>
+        <td>{{comment.comment}}</td>
+        <td class="center">{{comment.is_inconsistent}}</td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      {% for total in total_average %}
+      {% if total.instructor == inst %}
+      <tr>
+        <td class="summary">Summary</td>
+        <td class="percent">{{total.total_average}}</td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+    </thead>
+  </table>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  {% endfor %}
+</body>
+</html>

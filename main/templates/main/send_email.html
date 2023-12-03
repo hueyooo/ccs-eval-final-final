@@ -1,0 +1,29 @@
+{% extends 'main/base.html' %} 
+{% block title %}Send Email{% endblock %} 
+{% load static %} 
+{% block style %}{% static 'css/send_email.css' %}{% endblock %} 
+{% block content %}
+  <div class="image-bg">
+    <a class="back-btn" href="/settings">
+      <img src="{% static 'images/icons/back.png' %}" alt="">
+      Go back
+    </a>
+  </div>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <h1>Send Email(Notification)</h1>
+    <hr width="90%" size="4px" color="gold">
+    <div class="input-container">
+      <label for="subject">Subject</label>
+      <input type="text" name="subject" value="Notice!" required>
+      <label for="message">Message</label>
+      <textarea name="message" rows="10" required>The Evaluation is now open!
+
+Click here -> (link)
+      </textarea>
+    </div>
+    <div class="buttons">
+      <button type="submit" class="btn btn-success">Send Email</button>
+    </div>
+  </form>
+{% endblock %}
