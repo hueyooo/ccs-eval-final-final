@@ -1,0 +1,204 @@
+.user-profile-container {
+  width: 25%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-image: url(../images/bg-images/evaluation-page-bg.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.user-profile-container img {
+  width: 160px;
+  height: 160px;
+  margin-top: 11vh;
+  border: 1px solid rgb(112, 112, 112);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-profile-container .details {
+  width: 80%;
+  background: rgba(0, 0, 0, 80%);
+  color: white;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-profile-container .details h2 {
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+  padding: 3%;
+  width: 94%;
+  background: rgba(255, 255, 255, 10%);
+}
+
+.user-profile-container .details p {
+  text-align: center;
+  font-size: 15px;
+  margin: 0;
+  padding: 2%;
+  padding-bottom: 0;
+}
+
+.user-profile-container .details .reset-pass {
+  background-color: rgb(255, 189, 20);
+  color:black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: montserrat;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 2% 0;
+  transition: all .2s;
+}
+
+.user-profile-container .details .reset-pass:hover {
+  background-color: rgb(214, 153, 0);
+}
+
+.user-profile-container .details .logout-button {
+  background-color: rgb(184, 184, 184);
+  color:black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: montserrat;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 2% 0;
+  transition: all .2s;
+}
+
+.user-profile-container .details .logout-button:hover {
+  background-color: rgb(143, 143, 143);
+}
+
+.user-profile-details-container {
+  width: 75%;
+  height: 100%;
+  background: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.user-profile-details-container form {
+  width: 90%;
+  margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-profile-details-container form h2 {
+  margin: 2vh 0;
+  font-size: 22px;
+  margin-right: auto;
+}
+
+.user-profile-details-container form hr {
+  margin: 0;
+}
+
+.user-profile-details-container form .input-container {
+  width: 100%;
+  margin-bottom: 1vh;
+}
+
+.user-profile-details-container form .input-container label {
+  font-size: 18px;
+  display: block;
+}
+
+.user-profile-details-container form .input-container input {
+  height: 25px;
+  width: 99%;
+  padding: 2px;
+  border: 2px solid rgb(104, 104, 104);
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.user-profile-details-container form .input-container #id_image {
+  height: fit-content;
+  width: 40%;
+  padding: 0;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.user-profile-details-container form .input-container ::-webkit-file-upload-button {
+  color: white;
+  font-family: montserrat;
+  background: rgb(0, 183, 255);;
+  padding: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .15s;
+}
+
+.user-profile-details-container form .input-container ::-webkit-file-upload-button:hover {
+  background: rgb(0, 145, 202);
+}
+
+.user-profile-details-container form button {
+  background-color: rgb(255, 189, 20);
+  color:black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: montserrat;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 1% 0;
+  width: fit-content;
+  transition: all .2s;
+}
+
+.user-profile-details-container form button:hover {
+  background-color: rgb(214, 153, 0);
+}
+
+.user-profile-details-container form .full-name {
+  margin: 2vh 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.user-profile-details-container form .full-name .first {
+  width: 45%;
+  margin-right: 10%;
+}
+
+.user-profile-details-container form .full-name .last {
+  width: 45%;
+}
+
+.user-profile-details-container form .full-name .name label {
+  font-size: 18px;
+}
+
+.user-profile-details-container form .full-name .name input {
+  height: 25px;
+  width: 98%;
+  padding: 2px;
+  border: 2px solid rgb(104, 104, 104);
+  border-radius: 4px;
+  margin-top: 4px;
+}

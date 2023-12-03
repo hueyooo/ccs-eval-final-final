@@ -1,0 +1,123 @@
+/* @font-face {
+  font-family: montserrat;
+  src: url(../fonts/Montserrat-SemiBold.otf);
+} */
+
+* {
+  font-family: montserrat;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../images/bg-images/login-bg.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  margin: 0;
+  width: 430px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255,255,255,.2);
+  border: 2px solid white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.logo-pic {
+  width: 300px;
+}
+
+form {
+  width: 430px;
+  border: 2px solid #ffffff;
+  padding: 30px;
+  background: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form .errorlist {
+  list-style: none;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+form .errorlist li {
+  margin: 0;
+  color: black;
+  background-color: #ffc3c3;
+  padding: 5px;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 13px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+label {
+  color: black;
+  font-size: 18px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+input {
+  display: block;
+  border: 2px solid #ccc;
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: rgb(255, 189, 20);
+  padding: 10px 15px;
+  color: #0a0a0a;
+  border-radius: 5px;
+  border: none;
+  transition: all .2s;
+}
+
+button:hover {
+  background-color: rgb(214, 153, 0);
+  cursor: pointer;
+}
+
+h2 {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.reset-link {
+  text-decoration: none;
+  color: #0066ff;
+}
+
+.reset-link:hover {
+  text-decoration: underline;
+}
